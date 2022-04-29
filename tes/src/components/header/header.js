@@ -82,7 +82,7 @@ export default function Header() {
 
                 <div className='col-9 bg-secondary'>
                     <div className='bg-white'>
-                    <div className='row'>
+                    <div className='row mt-2'>
                         <div className='col-6'>
                             <h1 className='text-info'>PERSONNEL LIST</h1>
                             <h2>List of all personnels</h2>
@@ -99,11 +99,11 @@ export default function Header() {
             <div className='row'>
                 <div className='col-3'></div>
                 <div className='col-9'>
-                    <div className='bg-secondary'>
-                    <div className='row bg-warning'>
+                    <div className='bg-white'>
+                    <div className='row bg-secondary'>
                     {user.map(user => {
                         return (
-                    <div className='col-3 mt-5'>
+                    <div className='col-3 mt-5 '>
                             <Card key={user.id} style={{ width: '18rem' }}>
                             <Card.Title>Personnel ID:</Card.Title>
                             <Card.Title>{user.id.value}</Card.Title>
